@@ -1,0 +1,27 @@
+My initial thoughts on the TimeCalulator project off the bat not good.
+I will start off by stating the bad things I found in the HTML file. Another issue I seen was in the HTML 
+file, the correct structure of an HTML file was not implemented. It was missing quite a few important
+tags. It was missing the Doctype tag that is supposed to be at the beginning of every HTML to give 
+instructions to the web browser how to handle and load properly. Second it was missing the HTML tag 
+which is supposed to follow the Doctype. It is a best practice to include this tag, it allows the whole 
+document to be manipulated by JavaScript and styled by CSS if needed. Third it was missing a HEAD 
+element used to hold important information that allows site to be search engine friendly. I also included 
+the link to external CSS and scripts in the HEAD. I set the scripts to load asynchronously. Fourth, the 
+HTML doc did not include any indentation to make code more readable. 
+
+Good things that I seen was that the elements had good names and attributes were set well for the 
+input tags. 
+
+The bad practices I seen in the JavaScript. There were no comments at all outlining what anything did. 
+This made it harder to determine what the application was doing. Comments allow for other people to 
+read code easier. Also, after editing this through Visual Studio Code I found there was a warning in line 
+25 regarding a moment object. All that was needed was a explicit format. In lines 13-15 there were no 
+semicolons to end statements.
+
+Good tings in the JavaScript file were that the code did work out the box. 
+
+Overall, in the begging when executing the app, it was not user friendly. I did not know that the main 
+function of the app was to find the difference in time from a selected date to a current date. It took me 
+a little to figure that out. The application should be as explicit as possible, so users know how to use it 
+off the bat. Also some styling and bootstrap could be added to present the app better and deploy app 
+on different devices.

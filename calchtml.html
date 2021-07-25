@@ -8,21 +8,34 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" async></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" async></script>
         <title>Date Diffrence Calculator</title>
-        <meta name="description" content="Calculate the diffrence between two selected dates." />
+        <meta name="description" content="Calculate the datetime diffrence between two selected datetimes. Page is pre-populated with current datetimes for both selections" />
     </head>
 
         
     <body>
-        <h1>Calculate date difference between two selected dates:</h1>
-        <fieldset>
+        <h1>Calculate date time diffrence between two selected dates:</h1>
+        <fieldset class="firstDate">
             <legend>First Date Selected</legend>
-            <label for="Year">Year:</label> <input type="number" name="year" min="1"  />
-            <label for="Month">Month:</label> <input type="number" name="month" min="1" max="12"  />
-            <label for="Date">Day:</label> <input type="number" name="date" min="1" max="31"  />
+            <label for="Year">Year:</label> <input type="number" name="year" min="1"/>
+            <label for="Month">Month:</label> <input type="number" name="month" min="1" max="12"/>
+            <label for="Date">Day:</label> <input type="number" name="date" min="1" max="31"/>
+            <label for="Hour">Hour:</label> <input type="number" name="hour" min="0" max="23"/>
+            <label for="Minute">Minute:</label> <input type="number" name="minute" min="0" max="59"/>
+            <label for="Second">Second:</label> <input type="number" name="second" min="0" max="59"/>            
         </fieldset>
         <br>
-        <button onclick="calculate()">Calculate</button>
-        <div><h1>Difference is: <span id="difference"></span></h1></div>
+        <fieldset class="secondDate">
+            <legend>Second Date Selected</legend>
+            <label for="Year">Year:</label> <input type="number" name="year" min="1"/>
+            <label for="Month">Month:</label> <input type="number" name="month" min="1" max="12"/>
+            <label for="Date">Day:</label> <input type="number" name="date" min="1" max="31"/>
+            <label for="Hour">Hour:</label> <input type="number" name="hour" min="0" max="23"/>
+            <label for="Minute">Minute:</label> <input type="number" name="minute" min="0" max="59"/>
+            <label for="Second">Second:</label> <input type="number" name="second" min="0" max="59"/>            
+        </fieldset>
+        <button onclick="calculate()">Calculate Date Time Diffrence</button>
+        <div><h2><span id="difference"></span></h2></div>
+        <button onclick="startover()">Start Over</button>
 
     </body>
 </html>
